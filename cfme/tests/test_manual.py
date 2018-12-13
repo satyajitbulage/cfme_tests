@@ -244,23 +244,6 @@ def test_calculating_the_sum_of_a_value_in_a_consolidated_report():
 
 
 @pytest.mark.manual
-@test_requirements.ansible
-def test_embed_tower_exec_play_against_vmware():
-    """
-    User/Admin is able to execute playbook without creating Job Temaplate
-    and can execute it against vmware with vmware credentials
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        caseimportance: medium
-        initialEstimate: 1h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
 @test_requirements.upgrade
 @pytest.mark.tier(2)
 def test_upgrade_single_inplace_postgres():
@@ -295,23 +278,6 @@ def test_check_service_link_from_vm_detail_page():
         caseimportance: medium
         initialEstimate: 1/4h
         title: Check service link from VM detail page
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(1)
-def test_embed_tower_dashboard():
-    """
-    Check dashboard view has been added to existing Tower provider screens
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        caseimportance: medium
-        initialEstimate: 1/6h
-        startsin: 5.8
     """
     pass
 
@@ -472,22 +438,6 @@ def test_dialog_dropdown_elements_should_honour_defaults():
 
 
 @pytest.mark.manual
-@test_requirements.ansible
-def test_embed_tower_retire_service_with_instances_ec2():
-    """
-    Retire Service+instances which were deployed by playbook from CFME UI.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        caseimportance: medium
-        initialEstimate: 1h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
 @test_requirements.report
 def test_create_simple_aggregated_custom_report():
     """
@@ -540,23 +490,6 @@ def test_tagvis_config_manager_provider():
 
 
 @pytest.mark.manual
-@test_requirements.ansible
-def test_embed_tower_playbook_links():
-    """
-    There are links to repo"s within the playbook table. Clicking in this
-    cell will navigate to the details of the Repo.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        caseimportance: medium
-        initialEstimate: 1/6h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
 @pytest.mark.tier(2)
 def test_appliance_console_evm_start():
     """
@@ -599,23 +532,6 @@ def test_ldap_password_being_logged_in_plain_text_in_evm_log():
         caseimportance: medium
         initialEstimate: 1/3h
         title: LDAP password being logged in plain text in evm log
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_datastore_files():
-    """
-    Check datastore files are fetched correctly
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        caseimportance: medium
-        initialEstimate: 1/2h
-        testtype: integration
     """
     pass
 
@@ -819,30 +735,6 @@ def test_change_the_domain_sequence_in_sssd_and_verify_user_groups_retrieval():
         caseimportance: low
         initialEstimate: 1/2h
         title: Change the domain sequence in sssd, and verify user groups retrieval.
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.ansible
-def test_embed_tower_exec_play_against_machine_multi_appliance():
-    """
-    User/Admin is able to execute playbook without creating Job Temaplate
-    and can execute it against machine with machine credentials. Deploy 2
-    appliances, second one as unconfigured, through appliance_console join
-    the
-    region of first appliance. Enable embedded ansible on 2nd appliance.
-    From first appliance, add scm, credentials, new catalog, catalog item
-    of AnsiblePlaybook type. Select playbook e.g. dump_all_vars and order
-    it. When asked what machine to run it against, pick any rhel7 machine.
-    Playbook should be executed successfully.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        caseimportance: medium
-        initialEstimate: 1h
-        startsin: 5.8
     """
     pass
 
@@ -1076,23 +968,6 @@ def test_osp_test_saving_migration_plan_after_creation():
 
 
 @pytest.mark.manual
-@test_requirements.ansible
-def test_embed_tower_playbooks():
-    """
-    playbooks included under ansible shown in a table view (automation-
-    ansible-playbooks)
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        caseimportance: medium
-        initialEstimate: 1/6h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
 def test_cmqe_delete_existing_resource_quota():
     """
     Delete existing Resource Quota
@@ -1248,40 +1123,6 @@ def test_rhos_test_notification_for_snapshot_delete_failure():
 
 
 @pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_users():
-    """
-    Check users are fetched correctly for analysed VM
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        caseimportance: medium
-        initialEstimate: 1/2h
-        testtype: integration
-    """
-    pass
-
-
-@pytest.mark.manual
-@pytest.mark.tier(1)
-def test_rhi_appliance():
-    """
-    Red Hat Insights:
-    Register an Appliance to RHSM or Satellite.
-    Perform SmartState Analysis on appliance.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        testtype: integration
-    """
-    pass
-
-
-@pytest.mark.manual
 @test_requirements.rep
 def test_replication_central_admin_vm_retirement():
     """
@@ -1291,24 +1132,6 @@ def test_replication_central_admin_vm_retirement():
         assignee: jhenner
         casecomponent: infra
         initialEstimate: 1/12h
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_datastore_files_unicode():
-    """
-    Make sure https://bugzilla.redhat.com/show_bug.cgi?id=1221149 is fixed
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        caseimportance: medium
-        initialEstimate: 1/2h
-        startsin: 5.3
-        testtype: integration
     """
     pass
 
@@ -1375,312 +1198,6 @@ def test_notification_for_snapshot_actions_on_openstack():
         caseimportance: medium
         initialEstimate: 1h
         title: Test notification for snapshot actions on OpenStack
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_groups_scvmm2k12_windows2012r2_ntfs():
-    """
-    Add SCVMM-2012 provider.
-    Perform SSA on Windows 2012 server R2 VM having NTFS filesystem.
-    Check whether it retrieves Groups.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_groups_azure_ubuntu():
-    """
-    1. Add Azure provider
-    2. Perform SSA on Ubuntu instance.
-    3. Check Groups are retrieved.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/3h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_groups_scvmm2k12_centos_xfs():
-    """
-    Add SCVMM-2012 provider.
-    Perform SSA on CentOS VM.
-    Check whether Groups retrieved.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_groups_azure_rhel():
-    """
-    1. Add Azure provider
-    2. Perform SSA on RHEL instance.
-    3. Check Groups  are retrieved.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/3h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_groups_scvmm2k12_rhel74():
-    """
-    Add SCVMM-2012 provider.
-    Perform SSA on RHEL 7.4 VM.
-    Check whether Groups retrieved.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_groups_azure_windows2012r2_ntfs():
-    """
-    1. Add Azure provider
-    2. Perform SSA on Windows server 2012 R2.
-    3. Check Groups are retrieved.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/3h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_groups_rhos7_ga_fedora_22_ext4():
-    """
-    test_ssa_groups[rhos7-ga-fedora-22-ext4]
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        caseimportance: medium
-        initialEstimate: 1/2h
-        startsin: 5.3
-        testtype: integration
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_groups_scvmm2k16_centos_xfs():
-    """
-    Add SCVMM-2016 provider.
-    Perform SSA on CentOS VM.
-    Check whether Groups retrieved.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_groups_scvmm2k16_rhel74():
-    """
-    Add SCVMM-2016 provider.
-    Perform SSA on RHEL 7.4 VM.
-    Check whether Groups retrieved.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_groups_scvmm2k16_windows2012r2_ntfs():
-    """
-    Add SCVMM-2016 provider.
-    Perform SSA on Windows 2012 server R2 VM having NTFS filesystem.
-    Check whether it retrieves Groups.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_groups_azure_windows2016_ntfs():
-    """
-    1. Add Azure provider
-    2. Perform SSA on Windows2016 server.
-    3. Check Groups are retrieved.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/3h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_groups_ec2_rhel():
-    """
-    Add EC-2 provider.
-    Perform SSA on RHEL instance.
-    Check whether it retrieves Groups.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.9
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_groups_ec2_ubuntu():
-    """
-    Add EC-2 provider.
-    Perform SSA on Ubuntu instance.
-    Check whether it retrieves Groups.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.9
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_groups_ec2_windows2012r2_ntfs():
-    """
-    Add EC-2 provider.
-    Perform SSA on Windows 2012 server R2 VM having NTFS filesystem.
-    Check whether it retrieves Groups.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.9
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_groups_scvmm2k16_windows2016_ntfs():
-    """
-    Add SCVMM-2016 provider.
-    Perform SSA on Windows 2016 server VM having NTFS filesystem.
-    Check whether it retrieves Groups.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_groups_scvmm2k12_windows2016_ntfs():
-    """
-    Add SCVMM-2012 provider.
-    Perform SSA on Windows 2016 server VM having NTFS filesystem.
-    Check whether it retrieves Groups.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_groups_ec2_fedora():
-    """
-    Add EC-2 provider.
-    Perform SSA on Fedora instance.
-    Check whether it retrieves Groups.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.9
     """
     pass
 
@@ -1838,23 +1355,6 @@ def test_ec2_public_images():
 
 
 @pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_init_processes():
-    """
-    Check init services are fetched correctly for analysed VM
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        caseimportance: medium
-        initialEstimate: 1/2h
-        testtype: integration
-    """
-    pass
-
-
-@pytest.mark.manual
 @pytest.mark.tier(1)
 def test_black_console_ipa_negative():
     """
@@ -1866,23 +1366,6 @@ def test_black_console_ipa_negative():
         caseimportance: medium
         caseposneg: negative
         initialEstimate: 1/6h
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_packages():
-    """
-    Check packages are fetched correctly for analysed VM
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        caseimportance: medium
-        initialEstimate: 1/2h
-        testtype: integration
     """
     pass
 
@@ -2515,35 +1998,6 @@ def test_pdf_summary_infra_provider():
 
 
 @pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(3)
-def test_service_ansible_retirement_remove_resources():
-    """
-    https://bugzilla.redhat.com/show_bug.cgi?id=1501143
-    Description of problem:
-    It"s not possible to have "Remove resources?" field with "No" value in
-    Ansible Playbook catalog item
-    Steps to Reproduce:
-    1. Open creation screen of Ansible Playbook catalog item.
-    2. Fill required fields.
-    3. Open Retirement tab.
-    4. Fill "Remove resources?" field with "No" value.
-    5. Press "Save" button.
-    Actual results:
-    In details screen of the catalog item "Remove resources?" has "Yes".
-    Expected results:
-    "Remove resources" should have correct value.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        initialEstimate: 1/4h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
 @pytest.mark.tier(1)
 def test_user_quota_vm_reconfigure():
     """
@@ -2839,39 +2293,6 @@ def test_storage_ebs_volume_crud():
 
 
 @pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(1)
-def test_embed_tower_failover():
-    """
-    Check that ansible fails over to new region correctly
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        caseimportance: medium
-        initialEstimate: 1h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(1)
-def test_embed_tower_add_scm_credentials():
-    """
-    Add SCM credentials for private GIT repo.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        initialEstimate: 1/4h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
 @pytest.mark.tier(1)
 def test_regions_disable_azure():
     """
@@ -3000,60 +2421,6 @@ def test_retirement_now_scvmm():
         caseimportance: medium
         initialEstimate: 1/8h
         startsin: 5.4
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_patches_azure_windows2012r2_ntfs():
-    """
-    1. Add Azure provider
-    2. Perform SSA on Windows server 2012 R2.
-    3. Check Patches are retrieved.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/3h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_patches_ec2_windows2012r2_ntfs():
-    """
-    Add EC-2 provider.
-    Perform SSA on Windows 2012 R2 server VM.
-    Check whether Patches are retrieved.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.9
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_patches_azure_windows2016_ntfs():
-    """
-    1. Add Azure provider
-    2. Perform SSA on Windows2016 server.
-    3. Check Patches are retrieved.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/3h
-        startsin: 5.6
     """
     pass
 
@@ -3328,24 +2695,6 @@ def test_retirement_date_uses_correct_time_zone():
         initialEstimate: 1/15h
         startsin: 5.9
         title: Retirement date uses correct time zone
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(1)
-def test_embed_tower_monitor_resources():
-    """
-    Check there is a method for monitoring embedded ansibles resource
-    usage.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        caseimportance: medium
-        initialEstimate: 1/10h
-        startsin: 5.8
     """
     pass
 
@@ -5717,23 +5066,6 @@ def test_configure_diagnostics_pages_cfme_region():
 
 
 @pytest.mark.manual
-@test_requirements.ansible
-def test_embed_tower_exec_play_stdout():
-    """
-    User/Admin is able to execute playbook and see stdout of it once
-    completed.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        caseimportance: medium
-        initialEstimate: 1h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
 @test_requirements.upgrade
 @pytest.mark.tier(2)
 def test_upgrade_multi_ext_inplace():
@@ -6041,22 +5373,6 @@ def test_black_console_ext_auth_options():
             1. check changes in ui
             2. check changes in ui
             3. check changes in ui
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(2)
-def test_embed_ansible_next_gen():
-    """
-    Follow BZ: https://bugzilla.redhat.com/show_bug.cgi?id=1511126
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        initialEstimate: 1/2h
-        startsin: 5.10
     """
     pass
 
@@ -6504,23 +5820,6 @@ def test_create_generic_class():
         caseimportance: medium
         initialEstimate: 1/4h
         title: create generic class
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.ansible
-def test_embed_tower_exec_play_against_rhos():
-    """
-    User/Admin is able to execute playbook without creating Job Temaplate
-    and can execute it against RHOS with RHOS credentials.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        caseimportance: medium
-        initialEstimate: 1h
-        startsin: 5.9
     """
     pass
 
@@ -7128,22 +6427,6 @@ def test_log_collection_via_ftp_over_ipv6():
 
 
 @pytest.mark.manual
-@test_requirements.ansible
-def test_embed_tower_crud_repo():
-    """
-    CRUD repo.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        caseimportance: critical
-        initialEstimate: 1/2h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
 @pytest.mark.tier(1)
 def test_sdn_nsg_firewall_rules_azure():
     """
@@ -7213,42 +6496,6 @@ def test_new_dialog_editor_all_element_types_ui_and_validations():
         initialEstimate: 1/4h
         startsin: 5.9
         title: New dialog editor - All element types UI and validations
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(3)
-def test_embed_tower_refresh_provider_repo_list():
-    """
-    Test if ansible playbooks list is updated in the UI when "Refresh
-    Selected Ansible Repositories" clicked in the repository list.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        caseimportance: critical
-        initialEstimate: 1/6h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(3)
-def test_embed_tower_refresh_provider_repo_details():
-    """
-    Test if ansible playbooks list is updated in the UI when "Refresh this
-    Repository" clicked in the repository details view.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        caseimportance: critical
-        initialEstimate: 1/6h
-        startsin: 5.8
     """
     pass
 
@@ -7325,24 +6572,6 @@ def test_delete_orchestration_template_in_use():
                Delete the template
         startsin: 5.5
         title: Delete orchestration template in use
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(2)
-def test_embed_tower_invisible():
-    """
-    Embedded Ansible Tower provider won"t be visible in the CFME UI (Tower
-    should be headless, its UI should not be enabled.) p1
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        caseimportance: medium
-        initialEstimate: 1/12h
-        startsin: 5.8
     """
     pass
 
@@ -7583,23 +6812,6 @@ def test_service_infra_tenant_quota_storage_default_entry_point():
 
 
 @pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_groups():
-    """
-    Check groups are fetched correctly for analysed VM
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        caseimportance: medium
-        initialEstimate: 1/2h
-        testtype: integration
-    """
-    pass
-
-
-@pytest.mark.manual
 @test_requirements.quota
 @pytest.mark.tier(1)
 def test_service_cloud_tenant_quota_memory_default_entry_point():
@@ -7690,1024 +6902,6 @@ def test_sui_reconfigure_service_from_sui():
 
 
 @pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_azure_windows2016_ntfs():
-    """
-    1. Add Azure provider
-    2. Perform SSA on Windows2016 server.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/3h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_scvmm2k16_centos_xfs():
-    """
-    Add SCVMM-2016 provider.
-    Perform SSA on CentOS VM.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_azure_multiple_vms():
-    """
-    Perform SSA on multiple VMs.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        caseimportance: critical
-        initialEstimate: 1/4h
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_scvmm2k16_windows2016_disk_fileshare():
-    """
-    Add SCVMM-2016 provider.
-    Perform SSA on Windows 2016 server R2 VM having disk located on
-    Fileshare.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_scvmm2k12_windows2016_ntfs():
-    """
-    Add SCVMM-2012 provider.
-    Perform SSA on Windows 2016 server VM having NTFS filesystem.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_scvmm2k12_windows2016_refs():
-    """
-    Add SCVMM-2012 provider.
-    Perform SSA on Windows 2016 server R2 VM having ReFS filesystem.
-    It should fail-->  Unable to mount filesystem. Reason:[ReFS is Not
-    Supported]
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_azure_windows2012r2_ntfs():
-    """
-    1. Add Azure provider
-    2. Perform SSA on Windows2012 R2 server Instance.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/3h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_scvmm2k16_windows2012r2_refs():
-    """
-    Add SCVMM-2016 provider.
-    Perform SSA on Windows 2012 server R2 VM having ReFS filesystem.
-    It should fail-->  Unable to mount filesystem. Reason:[ReFS is Not
-    Supported]
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_ec2_customer_scenario():
-    """
-    This test case should be checked after each CFME release.(which
-    supports EC2 SSA)
-    Add EC-2 provider.
-    Perform SSA on instance.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.9
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_rhos7_ga_fedora_22_ext4():
-    """
-    test_ssa_vm[rhos7-ga-fedora-22-ext4]
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        caseimportance: medium
-        initialEstimate: 1/2h
-        startsin: 5.3
-        testtype: integration
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_scvmm2k16_schedule():
-    """
-    Trigger SmartState Analysis via schedule on VM.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        caseimportance: critical
-        initialEstimate: 1/4h
-        startsin: 5.3
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_scvmm2k12_second_disk_refs():
-    """
-    Add SCVMM-2012 provider.
-    Perform SSA on Windows 2012 server R2 VM having
-    NTFS as Primary Disk filesystem and secondary disk ReFS filesystem.
-    It should pass without any error.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm():
-    """
-    Make sure SSA can be started on a VM for configured provider
-    (parametrized)
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        caseimportance: medium
-        initialEstimate: 1/2h
-        testtype: integration
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_ec2_fedora():
-    """
-    Add EC-2 provider.
-    Perform SSA on Fedora instance.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.9
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_azure_compliance_policy():
-    """
-    Checks compliance condition on VM/Instance which triggers Smartstate
-    Analysis on VM/Instance.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        caseimportance: critical
-        initialEstimate: 1/4h
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_vsphere6_nested_wimdows7_xfs_ssui():
-    """
-    1. Provision service with Windows 7 VM
-    2. Perform SSA on it.
-    3. Check data populated on Provisioned Service in SSUI Dashboard.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        caseimportance: medium
-        initialEstimate: 1/3h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_scvmm2k12_compliance_policy():
-    """
-    Checks compliance condition on VM/Instance which triggers Smartstate
-    Analysis on VM/Instance.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        caseimportance: critical
-        initialEstimate: 1/4h
-        startsin: 5.3
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_scvmm2k16_multiple_vms():
-    """
-    Perform SSA on multiple VMs.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        caseimportance: critical
-        initialEstimate: 1/4h
-        startsin: 5.3
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_azure_schedule():
-    """
-    Trigger SmartState Analysis via schedule on VM.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        caseimportance: critical
-        initialEstimate: 1/4h
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_scvmm2k16_windows2012r2_ntfs():
-    """
-    Add SCVMM-2016 provider.
-    Perform SSA on Windows 2012 server R2 VM having NTFS filesystem.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_azure_managed_disk():
-    """
-    Perform SSA on Managed disk on Azure provider.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_ec2_windows2012_ssui():
-    """
-    1. Provision service with Windows 2012 VM
-    2. Perform SSA on it.
-    3. Check data populated on Provisioned Service in SSUI Dashboard.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        caseimportance: medium
-        initialEstimate: 1/3h
-        startsin: 5.9
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_ec2_windows2012r2_ntfs():
-    """
-    Add EC-2 provider.
-    Perform SSA on Windows 2012 server R2 VM having NTFS filesystem.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.9
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_azure_rhel():
-    """
-    Create or Use existing RHEL VM/Instance present in Azure.
-    Perform SSA on RHEL VM/Instance when
-    VM/Instance is Powered ON
-    VM/Instance is Powered OFF
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        caseimportance: medium
-        initialEstimate: 1/4h
-        startsin: 5.6
-        upstream: no
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_azure_wimdows2016_ssui():
-    """
-    1. Provision service with Windows 2016 VM
-    2. Perform SSA on it.
-    3. Check data populated on Provisioned Service in SSUI Dashboard.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        caseimportance: medium
-        initialEstimate: 1/3h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_azure_windows2016_refs():
-    """
-    This test is to verify that you get an error when trying to perform
-    SSA on a Windows2016 VM that has a ReFS formatted disk attached.  Here
-    is the before and after.
-    05/26/17 18:13:36 UTC
-    05/26/17 18:10:56 UTC
-    05/26/17 18:10:46 UTC
-    finished
-    Unable to mount filesystem. Reason:[ReFS is Not Supported]
-    Scan from Vm ReFS16on16a
-    admin
-    EVM
-    Scanning completed.
-    05/26/17 16:12:45 UTC
-    05/26/17 16:08:30 UTC
-    05/26/17 16:08:26 UTC
-    finished
-    Process completed successfully
-    Scan from Vm ReFS16on16a
-    admin
-    EVM
-    Synchronization complete
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        caseimportance: medium
-        caseposneg: negative
-        initialEstimate: 1/4h
-        setup: Need to create a windows 2016 instance and save it onto the ReFS disks
-               on Azure.
-               Add a second disk to the VM config.  Open VM, initialize disk and
-               format it as ReFS
-               Refresh you CFME appliance
-               Perform SSA on that VM.
-               Best to just use existing ReFS vms.
-        startsin: 5.6
-        upstream: yes
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_scvmm2k12_multiple_vms():
-    """
-    Perform SSA on multiple VMs.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        caseimportance: critical
-        initialEstimate: 1/4h
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_scvmm2k12_centos_xfs():
-    """
-    Add SCVMM-2012 provider.
-    Perform SSA on CentOS VM.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_azure_region():
-    """
-    1. Add an Azure Instance in one region and assign it to a Resource
-    Group from another region.
-    BZ link: https://bugzilla.redhat.com/show_bug.cgi?id=1503295
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.9
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_scvmm2k16_windows2016_ntfs():
-    """
-    Add SCVMM-2016 provider.
-    Perform SSA on Windows 2016 server VM having NTFS filesystem.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_scvmm2k16_windows2016_refs():
-    """
-    Add SCVMM-2016 provider.
-    Perform SSA on Windows 2016 server R2 VM having ReFS filesystem.
-    It should fail-->  Unable to mount filesystem. Reason:[ReFS is Not
-    Supported]
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_ec2_ubuntu_ssui():
-    """
-    1. Provision service with Ubuntu VM
-    2. Perform SSA on it.
-    3. Check data populated on Provisioned Service in SSUI Dashboard.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        caseimportance: medium
-        initialEstimate: 1/3h
-        startsin: 5.9
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_azure_wimdows2012_ssui():
-    """
-    1. Provision service with Windows 2012 VM
-    2. Perform SSA on it.
-    3. Check data populated on Provisioned Service in SSUI Dashboard.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        caseimportance: medium
-        initialEstimate: 1/3h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_ec2_rhel():
-    """
-    Add EC-2 provider.
-    Perform SSA on RHEL instance.
-    Cross-check whether smartstate instance created from AMI mentioned in
-    production.yml.
-    BZ:https://bugzilla.redhat.com/show_bug.cgi?id=1547228
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.9
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_ec2_agent_tracker():
-    """
-    BZ link:  https://bugzilla.redhat.com/show_bug.cgi?id=1557452
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/3h
-        startsin: 5.9
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_azure_windows2012r2_refs():
-    """
-    This test is to verify that you get an error when trying to perform
-    SSA on a Windows2012 r2 instance that has a ReFS formatted disk
-    attached.  Here is the before and after.
-    05/26/17 18:13:36 UTC
-    05/26/17 18:10:56 UTC
-    05/26/17 18:10:46 UTC
-    finished
-    Unable to mount filesystem. Reason:[ReFS is Not Supported]
-    Scan from Vm ReFS16on16a
-    admin
-    EVM
-    Scanning completed.
-    05/26/17 16:12:45 UTC
-    05/26/17 16:08:30 UTC
-    05/26/17 16:08:26 UTC
-    finished
-    Process completed successfully
-    Scan from Vm ReFS16on16a
-    admin
-    EVM
-    Synchronization complete
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        caseposneg: negative
-        initialEstimate: 1/2h
-        setup: Need to create a windows 2012r2 instance and save it onto the ReFS
-               disks on Azure.
-               Add a second disk to the VM config.  Open VM, initialize disk and
-               format it as ReFS
-               Refresh you CFME appliance
-               Perform SSA on that VM.
-               Best to just use existing ReFS vms.
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_ec2_ubuntu():
-    """
-    Add EC-2 provider.
-    Perform SSA on Ubuntu instance.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.9
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_vsphere6_nested_centos_xfs_ssui():
-    """
-    1. Provision service with CentOS VM
-    2. Perform SSA on it.
-    3. Check data populated on Provisioned Service in SSUI Dashboard.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        caseimportance: medium
-        initialEstimate: 1/3h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_azure_ubuntu():
-    """
-    Perform SSA on Ubuntu VM
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_scvmm2k12_windows2012r2_refs():
-    """
-    Add SCVMM-2012 provider.
-    Perform SSA on Windows 2012 server R2 VM having ReFS filesystem.
-    It should fail-->  Unable to mount filesystem. Reason:[ReFS is Not
-    Supported]
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_scvmm2k12_windows2012r2_ntfs():
-    """
-    Add SCVMM-2012 provider.
-    Perform SSA on Windows 2012 server R2 VM having NTFS filesystem.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_azure_non_managed_disk():
-    """
-    Perform SSA on non-managed (blod) disk on Azure provider.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_scvmm2k12_windows2016_disk_fileshare():
-    """
-    Add SCVMM-2012 provider.
-    Perform SSA on Windows 2016 server R2 VM having disk located on
-    Fileshare..
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_scvmm2k16_rhel74():
-    """
-    Add SCVMM-2016 provider.
-    Perform SSA on RHEL 7.4 VM.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_azure_ubuntu_ssui():
-    """
-    1. Provision service with Ubuntu VM
-    2. Perform SSA on it.
-    3. Check data populated on Provisioned Service in SSUI Dashboard.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        caseimportance: medium
-        initialEstimate: 1/3h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_scvmm2k16_second_disk_refs():
-    """
-    Add SCVMM-2012 provider.
-    Perform SSA on Windows 2016 server R2 VM having
-    NTFS as Primary Disk filesystem and secondary disk ReFS filesystem.
-    It should pass without any error.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_scvmm2k12_schedule():
-    """
-    Trigger SmartState Analysis via schedule on VM.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        caseimportance: critical
-        initialEstimate: 1/4h
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_ec2_windows2016_ssui():
-    """
-    1. Provision service with Windows 2016 VM
-    2. Perform SSA on it.
-    3. Check data populated on Provisioned Service in SSUI Dashboard.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        caseimportance: medium
-        initialEstimate: 1/3h
-        startsin: 5.9
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_disk_usage():
-    """
-    1. Add a VMware provider
-    2. Run SSA for the VM and the data store (might not be necessary, but
-    wanted to make sure all data collection is executed)
-    3. Navigate to a VM
-    4. Click on "number of disks"
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        caseimportance: medium
-        initialEstimate: 1/4h
-        startsin: 5.3
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_cancel_task():
-    """
-    Start SSA on VM and wait snapshot to create.
-    Cancel the task immediately.
-    BZ: https://bugzilla.redhat.com/show_bug.cgi?id=1538347
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_scvmm2k12_rhel74():
-    """
-    Add SCVMM-2012 provider.
-    Perform SSA on RHEL 7.4 VM.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_scvmm2k16_compliance_policy():
-    """
-    Checks compliance condition on VM/Instance which triggers Smartstate
-    Analysis on VM/Instance.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        caseimportance: critical
-        initialEstimate: 1/4h
-        startsin: 5.3
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_azure():
-    """
-    Perform SSA on Instance on States:
-    1. Power ON
-    2. Power OFF.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_ec2_vpc():
-    """
-    1. Create a VPC;
-    2. Do not attach any gateway to it;
-    3. Turn on "DNS resolution", "DNS hostname" to "yes";
-    4. Deploy an agent on this VPC;
-    5. Run SSA job;
-    BZ link: https://bugzilla.redhat.com/show_bug.cgi?id=1557377
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/3h
-        startsin: 5.9
-    """
-    pass
-
-
-@pytest.mark.manual
 @pytest.mark.tier(2)
 def test_vm_collect_running_processes_neg():
     """
@@ -8723,26 +6917,6 @@ def test_vm_collect_running_processes_neg():
         caseimportance: medium
         caseposneg: negative
         initialEstimate: 1/4h
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(1)
-def test_embed_tower_ui_requests_notifications_negative():
-    """
-    After all processes are running make sure websockets are enabled then
-    add a repo with the same name as a current repo and check the
-    notifications display correctly. With a Red banner to show it was
-    unsuccessful.
-    https://bugzilla.redhat.com/show_bug.cgi?id=1471868
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        initialEstimate: 1/6h
-        startsin: 5.8
     """
     pass
 
@@ -8813,23 +6987,6 @@ def test_session_purging_occurs_only_when_session_store_is_sql():
         caseimportance: medium
         initialEstimate: 1/10h
         title: Session purging occurs only when session_store is sql
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_actions():
-    """
-    Check SSA can be a part of action for VM
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        caseimportance: medium
-        initialEstimate: 1/2h
-        testtype: integration
     """
     pass
 
@@ -8934,22 +7091,6 @@ def test_aws_smartstate_pod():
 
 
 @pytest.mark.manual
-@test_requirements.ansible
-def test_embed_tower_repo_tag():
-    """
-    RBAC - tag Ansible repo and allow new user see only this repo.
-    https://bugzilla.redhat.com/show_bug.cgi?id=1526217
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        initialEstimate: 1/2h
-        startsin: 5.10
-    """
-    pass
-
-
-@pytest.mark.manual
 @pytest.mark.tier(1)
 def test_custom_button_openurl_vm():
     """
@@ -8999,23 +7140,6 @@ def test_satellite_host_groups_show_up_as_configuration_profiles_satellite_62():
         caseimportance: medium
         initialEstimate: 1/15h
         title: Satellite host groups show up as Configuration Profiles [satellite_62]
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(3)
-def test_service_ansible_playbook_with_already_existing_catalog_item_name():
-    """
-    https://bugzilla.redhat.com/show_bug.cgi?id=1509809
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        caseimportance: medium
-        initialEstimate: 1/6h
-        startsin: 5.8
     """
     pass
 
@@ -9228,25 +7352,6 @@ def test_sui_test_all_language_translations():
         caseimportance: medium
         initialEstimate: 1/4h
         title: SUI : Test all Language translations
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(3)
-def test_service_ansible_verbosity():
-    """
-    BZ 1460788
-    Check if the different Verbosity levels can be applied to service and
-    monitor the std out
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        caseimportance: medium
-        initialEstimate: 1/2h
-        startsin: 5.8
     """
     pass
 
@@ -9596,23 +7701,6 @@ def test_schedule_for_all_providers_vms():
 
 
 @pytest.mark.manual
-@test_requirements.ansible
-def test_embed_tower_repo_links():
-    """
-    test clicking #of playbooks cell will navigate to the Playbooks area,
-    filtered by the associated repo name.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        caseimportance: medium
-        initialEstimate: 1/6h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
 def test_osp_vmware60_test_vm_migration_from_ubuntu():
     """
     OSP: vmware60-Test VM migration from ubuntu
@@ -9776,29 +7864,6 @@ def test_provider_flavors_azure():
 
 
 @pytest.mark.manual
-@test_requirements.ansible
-def test_embed_tower_exec_play_against_amazon():
-    """
-    User/Admin is able to execute playbook without creating Job Temaplate
-    and can execute it against Amazon EC2 with EC2 credentials
-    enable Embedded Ansible
-    wait until it is enabled and add repository with playbooks
-    add AWS EC2 credentials
-    create new catalog
-    add new catalog item with EC2 playbook
-    order the service and wait for it"s execution
-    check if service was finished OK
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        initialEstimate: 1h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
 @test_requirements.general_ui
 @pytest.mark.tier(1)
 def test_control_icons_simulation():
@@ -9875,22 +7940,6 @@ def test_storage_ebs_snapshot_create():
         assignee: mmojzis
         caseimportance: medium
         initialEstimate: 1/5h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.ansible
-def test_embed_tower_add_branch_repo():
-    """
-    Ability to add repo with branch (without SCM credentials).
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        caseimportance: critical
-        initialEstimate: 1/6h
         startsin: 5.8
     """
     pass
@@ -10642,20 +8691,6 @@ def test_group_cloud_memory_quota_by_lifecycle():
 
 
 @pytest.mark.manual
-@pytest.mark.tier(1)
-def test_rhi_inventory():
-    """
-    Verify various tabs by applying filters on one or more systems
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-    """
-    pass
-
-
-@pytest.mark.manual
 @test_requirements.ssui
 def test_single_custom_button_disable():
     """
@@ -10829,59 +8864,6 @@ def test_osp_test_multiple_sources_to_single_target_mapping_for_clusters_ds_netw
 
 
 @pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(3)
-def test_service_ansible_playbook_cloud_credentials():
-    """
-    https://bugzilla.redhat.com/show_bug.cgi?id=1444092When the service is
-    viewed in my services it should also show that the cloud credentials
-    were attached to the service.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        caseimportance: low
-        initialEstimate: 1/4h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
-@pytest.mark.tier(1)
-def test_rhi_unregister():
-    """
-    Verify Unregisteration of system by selecting one or more systems from
-    list
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        testtype: integration
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(1)
-def test_embed_tower_repo_list():
-    """
-    After all processes are running add a few repo"s for playbooks. Check
-    that all these repos appear in the repo list section in the ui, With
-    the correct status and the correct quantity of playbooks.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        initialEstimate: 1/6h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
 @pytest.mark.tier(3)
 def test_automate_disabled_domains_in_domain_priority():
     """
@@ -11043,23 +9025,6 @@ def test_credentials_change_password_trailing_whitespace():
 
 
 @pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(1)
-def test_embed_tower_event_catcher_collect():
-    """
-    EventCatcher process collects all activity from api/acitivity_streamis
-    and is writing data into PG DB
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        initialEstimate: 1/4h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
 @test_requirements.log_depot
 @pytest.mark.tier(1)
 def test_log_collect_current_zone_all_unconfigured():
@@ -11181,25 +9146,6 @@ def test_custom_button_on_resource_detail_ssui():
         startsin: 5.9
         tags: ssui
         upstream: yes
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(3)
-def test_service_ansible_playbook_order_credentials_usecredsfromservicedialog():
-    """
-    Test if creds from Service Dialog are picked up for execution of
-    playbook or the default are used(that were set at the time of dialog
-    creation)
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        caseimportance: medium
-        initialEstimate: 1/4h
-        startsin: 5.8
     """
     pass
 
@@ -11346,44 +9292,6 @@ def test_in_dynamic_multi_select_dialog_elements_the_first_element_shouldnt_be_s
         initialEstimate: 1/6h
         title: In Dynamic multi select dialog elements the first element
                shouldn't be selected when nil default is specified
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(3)
-def test_service_ansible_playbook_machine_credentials_service_details_opsui():
-    """
-    https://bugzilla.redhat.com/show_bug.cgi?id=1515561  When the service
-    is viewed in my services it should also show that the cloud and
-    machine credentials were attached to the service.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        caseimportance: medium
-        initialEstimate: 1/2h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(3)
-def test_service_ansible_playbook_machine_credentials_service_details_sui():
-    """
-    https://bugzilla.redhat.com/show_bug.cgi?id=1540689  When the service
-    is viewed in my services it should also show that the cloud and
-    machine credentials were attached to the service.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        caseimportance: medium
-        initialEstimate: 1/2h
-        startsin: 5.8
     """
     pass
 
@@ -11678,40 +9586,6 @@ def test_custom_button_dialog_service_archived():
 
 
 @pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_running_processes():
-    """
-    Check running processes are fetched correctly for analysed VM
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        caseimportance: medium
-        initialEstimate: 1/2h
-        testtype: integration
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.ansible
-def test_embed_tower_repos_available():
-    """
-    Repositories are included under Ansible, Check Empty State pattern is
-    displayed when none exist.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        caseimportance: critical
-        initialEstimate: 1/6h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
 @test_requirements.quota
 @pytest.mark.tier(3)
 def test_quota_for_simultaneous_service_catalog_request_with_different_users():
@@ -11814,26 +9688,6 @@ def test_automate_schedule_crud():
 
 
 @pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(1)
-def test_embed_tower_add_vmware_credentials():
-    """
-    Allow user/admin to create/import credentials for machines which will
-    be managed (may need to be split into multiple tests to cover
-    -Machine, Network, Amazon Web Services, Rackspace, VMware vCenter, Red
-    Hat Satellite 6, Red Hat CloudForms, Google Compute Engine, Microsoft
-    Azure Classic, Microsoft Azure Resource Manager, OpenStack)
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        initialEstimate: 1h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
 @test_requirements.ssui
 @pytest.mark.tier(3)
 def test_add_to_shopping_cart_button_should_enable_after_refresh_on_some_dialog_fields_in_sui():
@@ -11847,23 +9701,6 @@ def test_add_to_shopping_cart_button_should_enable_after_refresh_on_some_dialog_
         startsin: 5.10
         title: "Add to shopping cart" button should enable after refresh on
                some dialog fields in SUI.
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.ansible
-def test_embed_tower_repo_details():
-    """
-    test clicking on a repo name should show details of the repository.
-    (Automation-Ansible-repositories table view showing added repos)
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        caseimportance: critical
-        initialEstimate: 1/6h
-        startsin: 5.8
     """
     pass
 
@@ -12583,24 +10420,6 @@ def test_osp_vmware65_test_vm_with_multiple_nics_with_single_ip_ipv6_to_first_ni
 
 
 @pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(3)
-def test_custom_button_order_ansible_playbook_service():
-    """
-    https://bugzilla.redhat.com/show_bug.cgi?id=1449361 An Ansible Service
-    Playbook can be ordered from a Custom Button
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: automate
-        caseimportance: medium
-        initialEstimate: 1/3h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
 @pytest.mark.tier(1)
 def test_vmware_vds_deploy_target():
     """
@@ -12788,22 +10607,6 @@ def test_config_manager_prov_from_service_ansible_tower_310():
         casecomponent: prov
         initialEstimate: 1h
         startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(1)
-def test_embed_tower_add_gce_credentials():
-    """
-    Add GCE credentials.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        initialEstimate: 1/2h
-        startsin: 5.9
     """
     pass
 
@@ -13304,24 +11107,6 @@ def test_pod_appliance_db_upgrade():
 
 
 @pytest.mark.manual
-@test_requirements.ansible
-def test_embed_tower_exec_play_against_openstack():
-    """
-    Execute playbook against Openstack provider.
-    Workaround must be applied:
-    https://bugzilla.redhat.com/show_bug.cgi?id=1511017
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        caseimportance: medium
-        initialEstimate: 1h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
 @test_requirements.chargeback
 @pytest.mark.tier(3)
 def test_chargeback_report_compute_provider():
@@ -13485,312 +11270,6 @@ def test_authorized_users_can_login():
         casecomponent: appl
         caseimportance: critical
         initialEstimate: 1/8h
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_users_azure_windows2016_ntfs():
-    """
-    1. Add Azure provider
-    2. Perform SSA on Windows2016 server.
-    3. Check Users are retrieved.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/3h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_users_azure_rhel():
-    """
-    1. Add Azure provider
-    2. Perform SSA on RHEL instance.
-    3. Check Users  are retrieved.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/3h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_users_scvmm2k16_centos_xfs():
-    """
-    Add SCVMM-2016 provider.
-    Perform SSA on CentOS VM.
-    Check whether Users retrieved.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_users_scvmm2k12_windows2016_ntfs():
-    """
-    Add SCVMM-2012 provider.
-    Perform SSA on Windows 2016 server VM having NTFS filesystem.
-    Check whether it retrieves Users.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_users_scvmm2k16_windows2016_ntfs():
-    """
-    Add SCVMM-2016 provider.
-    Perform SSA on Windows 2016 server VM having NTFS filesystem.
-    Check whether it retrieves Users.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_users_scvmm2k12_centos_xfs():
-    """
-    Add SCVMM-2012 provider.
-    Perform SSA on CentOS VM.
-    Check whether Users retrieved.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_users_ec2_ubuntu():
-    """
-    Add EC-2 provider.
-    Perform SSA on Ubuntu instance.
-    Check whether it retrieves Users.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.9
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_users_scvmm2k12_rhel74():
-    """
-    Add SCVMM-2012 provider.
-    Perform SSA on RHEL 7.4 VM.
-    Check whether Users retrieved.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_users_azure_ubuntu():
-    """
-    1. Add Azure provider
-    2. Perform SSA on Ubuntu Instance.
-    3. Check Users are retrieved.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/3h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_users_ec2_fedora():
-    """
-    Add EC-2 provider.
-    Perform SSA on Fedora instance.
-    Check whether it retrieves Users.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.9
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_users_scvmm2k16_rhel74():
-    """
-    Add SCVMM-2016 provider.
-    Perform SSA on RHEL 7.4 VM.
-    Check whether Users retrieved.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_users_rhos7_ga_fedora_22_ext4():
-    """
-    test_ssa_users[rhos7-ga-fedora-22-ext4]
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        caseimportance: medium
-        initialEstimate: 1/2h
-        startsin: 5.3
-        testtype: integration
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_users_scvmm2k16_windows2012r2_ntfs():
-    """
-    Add SCVMM-2016 provider.
-    Perform SSA on Windows 2012 server R2 VM having NTFS filesystem.
-    Check whether it retrieves Users.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_users_scvmm2k12_windows2012r2_ntfs():
-    """
-    Add SCVMM-2012 provider.
-    Perform SSA on Windows 2012 server R2 VM having NTFS filesystem.
-    Check whether it retrieves Users.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_users_ec2_rhel():
-    """
-    Add EC-2 provider.
-    Perform SSA on RHEL instance.
-    Check whether it retrieves Users.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.9
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_users_azure_windows2012r2_ntfs():
-    """
-    1. Add Azure provider
-    2. Perform SSA on Windows server 2012 R2.
-    3. Check Users are retrieved.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/3h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_users_ec2_windows2012r2_ntfs():
-    """
-    Add EC-2 provider.
-    Perform SSA on Windows 2012 server R2 VM having NTFS filesystem.
-    Check whether it retrieves Users.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.9
     """
     pass
 
@@ -14001,41 +11480,6 @@ def test_osp_vmware65_test_vm_migration_with_windows_7():
         startsin: 5.10
         subcomponent: OSP
         title: OSP: vmware65-Test VM migration with Windows 7
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(3)
-def test_service_ansible_overridden_extra_vars():
-    """
-    https://bugzilla.redhat.com/show_bug.cgi?id=1444107Once a Ansible
-    Playbook Service Dialog is built, it has default parameters, which can
-    be overridden at "ordering" time. Check if the overridden parameters
-    are passed.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        caseimportance: medium
-        initialEstimate: 1/6h
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.ansible
-def test_embed_tower_add_public_repo():
-    """
-    Ability to add public repo (without SCM credentials).
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        caseimportance: critical
-        initialEstimate: 1/6h
-        startsin: 5.8
     """
     pass
 
@@ -14263,312 +11707,6 @@ def test_automate_schema_field_without_type():
         caseimportance: medium
         caseposneg: negative
         initialEstimate: 1/12h
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_packages_ec2_ubuntu():
-    """
-    Add EC-2 provider.
-    Perform SSA on Ubuntu instance.
-    Check whether it retrieves Packages.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.9
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_packages_scvmm2k12_rhel74():
-    """
-    Add SCVMM-2012 provider.
-    Perform SSA on RHEL 7.4 VM.
-    Check whether Packages retrieved.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_packages_rhos7_ga_fedora_22_ext4():
-    """
-    test_ssa_packages[rhos7-ga-fedora-22-ext4]
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        caseimportance: medium
-        initialEstimate: 1/2h
-        startsin: 5.3
-        testtype: integration
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_packages_ec2_fedora():
-    """
-    Add EC-2 provider.
-    Perform SSA on Fedora instance.
-    Check whether it retrieves Packages.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.9
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_packages_scvmm2k16_centos_xfs():
-    """
-    Add SCVMM-2016 provider.
-    Perform SSA on CentOS VM.
-    Check whether Packages retrieved.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_packages_ec2_rhel():
-    """
-    Add EC-2 provider.
-    Perform SSA on RHEL instance.
-    Check whether it retrieves Packages.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.9
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_packages_scvmm2k12_windows2016_ntfs():
-    """
-    Add SCVMM-2012 provider.
-    Perform SSA on Windows 2016 server VM having NTFS filesystem.
-    Check whether it retrieves Applications.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_packages_azure_ubuntu():
-    """
-    1. Add Azure provider
-    2. Perform SSA on Ubuntu Instance.
-    3. Check Packages are retrieved.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/3h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_packages_azure_windows2016_ntfs():
-    """
-    1. Add Azure provider
-    2. Perform SSA on Windows2016 server.
-    3. Check Applications are retrieved.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/3h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_packages_scvmm2k12_windows2012r2_ntfs():
-    """
-    Add SCVMM-2012 provider.
-    Perform SSA on Windows 2012 server R2 VM having NTFS filesystem.
-    Check whether it retrieves Applications.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_packages_scvmm2k16_rhel74():
-    """
-    Add SCVMM-2016 provider.
-    Perform SSA on RHEL 7.4 VM.
-    Check whether Packages retrieved.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_packages_scvmm2k16_windows2012r2_ntfs():
-    """
-    Add SCVMM-2016 provider.
-    Perform SSA on Windows 2012 server R2 VM having NTFS filesystem.
-    Check whether it retrieves Applications.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_packages_ec2_windows2012r2_ntfs():
-    """
-    Add EC-2 provider.
-    Perform SSA on Windows 2012 server R2 VM having NTFS filesystem.
-    Check whether it retrieves Applications.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.9
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_packages_scvmm2k16_windows2016_ntfs():
-    """
-    Add SCVMM-2016 provider.
-    Perform SSA on Windows 2016 server VM having NTFS filesystem.
-    Check whether it retrieves Applications.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_packages_azure_rhel():
-    """
-    1. Add Azure provider
-    2. Perform SSA on RHEL instance.
-    3. Check Packages are retrieved.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/3h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_packages_azure_windows2012r2_ntfs():
-    """
-    1. Add Azure provider
-    2. Perform SSA on Windows server 2012 R2.
-    3. Check Packages are retrieved.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/3h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_packages_scvmm2k12_centos_xfs():
-    """
-    Add SCVMM-2012 provider.
-    Perform SSA on CentOS VM.
-    Check whether Packages retrieved.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
     """
     pass
 
@@ -15065,22 +12203,6 @@ def test_verify_two_factor_authentication_works_with_user_password_and_otp():
 
 
 @pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(1)
-def test_embed_tower_add_amazon_credentials():
-    """
-    Add Amazon credentials.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        initialEstimate: 1/2h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
 @pytest.mark.tier(2)
 def test_timepicker_should_pass_correct_timing_on_service_order():
     """
@@ -15532,29 +12654,6 @@ def test_crosshair_op_datastore_vsphere65():
 
 
 @pytest.mark.manual
-@test_requirements.drift
-@pytest.mark.tier(1)
-def test_drift_analysis_vpshere6_rhel():
-    """
-    1. Go to Compute-> Infrastructure-> Virtual Machines -> Select any vm
-    for SSA
-    2. Perform SSA on VM
-    3. Next, Reconfigure the VM with change in memory and CPU etc.
-    4. Again perform SSA on VM
-    5. Next, compare drift history
-    6. Check the drift comparison
-    Validate that updated values get displayed.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/3h
-        startsin: 5.3
-    """
-    pass
-
-
-@pytest.mark.manual
 @test_requirements.service
 @pytest.mark.tier(2)
 def test_bundle_stack_deployment():
@@ -15787,25 +12886,6 @@ def test_multiple_vm_provision_with_public_ip_azure():
 
 
 @pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(1)
-def test_embed_tower_ui_requests_notifications():
-    """
-    After all processes are running and websockets role is enabled, add a
-    new repo to embedded tower and check the notifications display
-    correctly. With a Green banner to show it was successful.
-    https://bugzilla.redhat.com/show_bug.cgi?id=1471868
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        initialEstimate: 1/6h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
 @test_requirements.right_size
 @pytest.mark.tier(1)
 def test_nor_memory_values_correct_vsphere6():
@@ -15963,23 +13043,6 @@ def test_vmware_manual_placemant_cluster_only():
 
 
 @pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(1)
-def test_embed_tower_api_auth():
-    """
-    The Tower API should not be wide open, authentication is required.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        caseimportance: critical
-        initialEstimate: 1/6h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
 @test_requirements.service
 @pytest.mark.tier(2)
 def test_service_retirement_requests_shall_be_run_by_the_user():
@@ -16074,24 +13137,6 @@ def test_osp_test_migrating_a_vm_which_has_encrypted_disk():
         startsin: 5.10
         subcomponent: OSP
         title: OSP: Test migrating a VM which has encrypted disk
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.ansible
-def test_embed_tower_exec_play_against_gce():
-    """
-    User/Admin is able to execute playbook without creating Job Temaplate
-    and can execute it against Google Compute Engine Cloud with GCE
-    credentials.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        caseimportance: medium
-        initialEstimate: 1h
-        startsin: 5.9
     """
     pass
 
@@ -16727,28 +13772,6 @@ def test_rightsize_cpu_rhv41():
 
 
 @pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(2)
-def test_ssa_with_snapshot_scvmm2():
-    """
-    Needed to verify this bug -
-    https://bugzilla.redhat.com/show_bug.cgi?id=1376172
-    There is a vm called LocalSSATest33 that is preconfigured for this
-    test.
-    I"ll do these one off tests for a while.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        caseimportance: medium
-        initialEstimate: 1h
-        startsin: 5.6.1
-        upstream: yes
-    """
-    pass
-
-
-@pytest.mark.manual
 @test_requirements.quota
 @pytest.mark.tier(1)
 def test_group_quota_vm_reconfigure():
@@ -17069,24 +14092,6 @@ def test_dialog_dropdown_ui_values_in_the_dropdown_should_be_visible_in_edit_mod
 
 
 @pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(3)
-def test_embed_tower_credentials():
-    """
-    Credentials included under ansible shown in a table view (automation-
-    ansible-credentials)
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        caseimportance: critical
-        initialEstimate: 1/12h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
 @pytest.mark.tier(2)
 def test_cockpit_after_uninstalling():
     """
@@ -17354,26 +14359,6 @@ def test_validate_cost_monthly_usage_network():
 
 
 @pytest.mark.manual
-@test_requirements.ansible
-def test_embed_tower_enhanced_playbook_debug():
-    """
-    Enable Embedded Ansible and add repo with playbooks. Try to create new
-    service dialog and try to order the service. In the dialog, there
-    should be option to enable debugging of the playbook (I believe the
-    playbook is executed with -vvv option).
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        caseimportance: medium
-        initialEstimate: 1h
-        startsin: 5.8
-        upstream: yes
-    """
-    pass
-
-
-@pytest.mark.manual
 @test_requirements.tag
 @pytest.mark.tier(2)
 def test_tagvis_cluster_and_vm_combination():
@@ -17387,24 +14372,6 @@ def test_tagvis_cluster_and_vm_combination():
         casecomponent: config
         caseimportance: medium
         initialEstimate: 1/8h
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(1)
-def test_embed_tower_creds_details():
-    """
-    Clicking on a cred name should show details of the Credentials.
-    (Automation-Ansible-Credentials Table view showing provider creds
-    added)
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        initialEstimate: 1/6h
-        startsin: 5.8
     """
     pass
 
@@ -18098,44 +15065,6 @@ def test_config_manager_change_zone():
 
 
 @pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(3)
-def test_service_ansible_linked_vms_opsui_sui():
-    """
-    Associated with BZhttps://bugzilla.redhat.com/show_bug.cgi?id=1510797
-    Please follow the steps below to recreate the scenario: 1. Enable
-    Embedded Ansible role.
-    2. Wait until it will be enabled.
-    3. Navigate to Automate/Ansible.
-    4. Add ansible repository https://github.com/mkanoor/playbook.
-    5. Navigate to Services->Catalogs.
-    6. Expand "Catalog Items" accordion.
-    7. Create "Ansible Playbook" Catalog Item.
-    8. Pick "add_single_vm_to_service.yml" playbook.
-    9. Navigate to Control->Explorer.
-    10. Expand Actions accordion.
-    11. Click Configuration->Add a new Action.
-    12. In action type choose "Run Ansible Playbook".
-    13. In Playbook Catalog Item choose just created catalog item.
-    14. In inventory choose "Target machine" or provide a specific host.
-    15. Assign this action to some event in a host or vm control policy.
-    16. Assign policy profile which contains that policy to some host or
-    vm.
-    17. Trigger the event which assigned to the policy.
-    18. Wait until the service will be provisioned.
-    19. Navigate tot Services/My Services.
-    20. Open details of the provisioned service, open "Provisioning" tab.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        initialEstimate: 1/2h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
 @test_requirements.service
 @pytest.mark.tier(3)
 def test_request_filter_on_request_page():
@@ -18441,24 +15370,6 @@ def test_ec2_security_group_record_values():
 
 
 @pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_template_rhos7_ga_fedora_22_ext4():
-    """
-    test_ssa_template[rhos7-ga-fedora-22-ext4]
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        caseimportance: medium
-        initialEstimate: 1/2h
-        startsin: 5.3
-        testtype: integration
-    """
-    pass
-
-
-@pytest.mark.manual
 def test_osp_vmware60_test_vm_migration_from_iscsi_storage_vmware_to_osp():
     """
     OSP: vmware60-Test VM migration from iSCSI Storage VMware to iSCSI in
@@ -18472,21 +15383,6 @@ def test_osp_vmware60_test_vm_migration_from_iscsi_storage_vmware_to_osp():
         startsin: 5.10
         subcomponent: OSP
         title: OSP: vmware60-Test VM migration from iSCSI Storage VMware to OSP
-    """
-    pass
-
-
-@pytest.mark.manual
-@pytest.mark.tier(1)
-def test_rhi_rules():
-    """
-    Verify all sub-tabs in rules and whether filter is working properly
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        testtype: integration
     """
     pass
 
@@ -18975,23 +15871,6 @@ def test_button_can_trigger_events():
         caseimportance: medium
         initialEstimate: 1/60h
         startsin: 5.6.1
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_host_os_info():
-    """
-    Checks the host's OS name and version
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        caseimportance: medium
-        initialEstimate: 1/2h
-        testtype: integration
     """
     pass
 
@@ -19607,23 +16486,6 @@ def test_catalog_item_changing_the_provider_template_after_filling_all_tabs():
 
 
 @pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(1)
-def test_embed_tower_ha():
-    """
-    Tower should be highly available. p2
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        caseimportance: medium
-        initialEstimate: 1/4h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
 @test_requirements.rep
 @pytest.mark.tier(1)
 def test_distributed_zone_failover_scheduler_singleton():
@@ -19635,22 +16497,6 @@ def test_distributed_zone_failover_scheduler_singleton():
         casecomponent: appl
         caseimportance: medium
         initialEstimate: 1/6h
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(1)
-def test_embed_tower_add_azure_credentials():
-    """
-    Add Azure credentials.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        initialEstimate: 1/2h
-        startsin: 5.9
     """
     pass
 
@@ -19976,379 +16822,6 @@ def test_pod_appliance_basic_ipa_auth():
 
 
 @pytest.mark.manual
-@test_requirements.ansible
-def test_embed_tower_exec_play_against_machine():
-    """
-    User/Admin is able to execute playbook without creating Job Temaplate
-    and can execute it against machine with machine credentials
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        caseimportance: medium
-        initialEstimate: 1h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_files_scvmm2k12_centos_xfs():
-    """
-    Add SCVMM-2012 provider.
-    Perform SSA on CentOS VM.
-    Check whether Files retrieved.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_files_azure_windows2016_ntfs():
-    """
-    1. Add Azure provider
-    2. Perform SSA on Windows2016 server.
-    3. Check Files are retrieved.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/3h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_files_scvmm2k12_windows2016_ntfs():
-    """
-    Add SCVMM-2012 provider.
-    Perform SSA on Windows 2016 server VM having NTFS filesystem.
-    Check whether it retrieves Files.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_files_rhos7_ga_fedora_22_ext4():
-    """
-    test_ssa_files[rhos7-ga-fedora-22-ext4]
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        caseimportance: medium
-        initialEstimate: 1/2h
-        startsin: 5.3
-        testtype: integration
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_files_azure_ubuntu():
-    """
-    1. Add Azure provider
-    2. Perform SSA on Ubuntu instance.
-    3. Check Files are retrieved.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/3h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_files_ec2_rhel():
-    """
-    Add EC-2 provider.
-    Perform SSA on RHEL instance.
-    Check whether it retrieves Files.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.9
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_files_ec2_fedora():
-    """
-    Add EC-2 provider.
-    Perform SSA on Fedora instance.
-    Check whether it retrieves Files.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.9
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_files_scvmm2k12_rhel74():
-    """
-    Add SCVMM-2012 provider.
-    Perform SSA on RHEL 7.4 VM.
-    Check whether Files retrieved.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_files_scvmm2k16_centos_xfs():
-    """
-    Add SCVMM-2016 provider.
-    Perform SSA on CentOS VM.
-    Check whether Files retrieved.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_files_scvmm2k16_rhel74():
-    """
-    Add SCVMM-2016 provider.
-    Perform SSA on RHEL 7.4 VM.
-    Check whether Files retrieved.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_files_scvmm2k16_windows2012r2_ntfs():
-    """
-    Add SCVMM-2016 provider.
-    Perform SSA on Windows 2012 server R2 VM having NTFS filesystem.
-    Check whether it retrieves Files.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_files_scvmm2k12_windows2012r2_ntfs():
-    """
-    Add SCVMM-2012 provider.
-    Perform SSA on Windows 2012 server R2 VM having NTFS filesystem.
-    Check whether it retrieves Files.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_files_ec2_ubuntu():
-    """
-    Add EC-2 provider.
-    Perform SSA on Ubuntu instance.
-    Check whether it retrieves Files.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.9
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_files_scvmm2k16_windows2016_ntfs():
-    """
-    Add SCVMM-2016 provider.
-    Perform SSA on Windows 2016 server VM having NTFS filesystem.
-    Check whether it retrieves Files.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_files_azure_windows2012r2_ntfs():
-    """
-    1. Add Azure provider
-    2. Perform SSA on Windows server 2012 R2.
-    3. Check Files are retrieved.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/3h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_files_ec2_windows2012r2_ntfs():
-    """
-    Add EC-2 provider.
-    Perform SSA on Windows 2012 server R2 VM having NTFS filesystem.
-    Check whether it retrieves Files.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        startsin: 5.9
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_files_azure_rhel():
-    """
-    1. Add Azure provider
-    2. Perform SSA on RHEL instance.
-    3. Check Files are retrieved.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/3h
-        startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@pytest.mark.tier(1)
-def test_upload_azure_image_to_azure():
-    """
-    Upload image copied from RHCF3-11271 to azure using powershell
-    similiar the script in the setup section.
-
-    Polarion:
-        assignee: anikifor
-        casecomponent: cloud
-        caseimportance: medium
-        initialEstimate: 1/2h
-        setup: # Video Demo Script - Upload VHD to Azure
-               # You have to log in via Login-AzureRmAccount
-               Get-AzureRmSubscription -SubscriptionId "9ee63d8e-aee7-4121-861c-
-               d67a5b8d231e" -TenantId "2e64678d-2fa8-40ed-8922-c9b8e2c3f100" |
-               Select-AzureRmSubscription
-               $ResourceGroupName = "CFMEQE-Main"
-               $BlobLocation = "https://cfmeqestore.blob.core.windows.net/"
-               $BlobContainer = "templates"
-               $BlobName = "tmpl-osDisk.vhd"
-               $BlobDestination = $BlobLocation + $BlobContainer + "/" + $BlobName
-               $LocalFilePath = "C:\tmp\"
-               $LocalFileName = "cfme-azure-5.6.0.13-1.x86_64.vhd"
-               $LocalFile = $LocalFilePath + $LocalFileName
-               Add-AzureRmVhd -ResourceGroupName $ResourceGroupName -Destination
-               $BlobDestination -LocalFilePath $LocalFile -NumberOfUploaderThreads 8
-        startsin: 5.6
-        title: Upload Azure image to Azure
-        upstream: no
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(1)
-def test_embed_tower_add_network_credentials():
-    """
-    Add Network credentials.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        initialEstimate: 1/2h
-        startsin: 5.9
-    """
-    pass
-
-
-@pytest.mark.manual
 @test_requirements.chargeback
 @pytest.mark.tier(2)
 def test_chargeback_report_filter_owner():
@@ -20556,24 +17029,6 @@ def test_restricted_user_rbac_for_access_control():
 
 
 @pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_files_unicode():
-    """
-    Make sure https://bugzilla.redhat.com/show_bug.cgi?id=1221149 is fixed
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        caseimportance: medium
-        caseposneg: negative
-        initialEstimate: 1/2h
-        testtype: integration
-    """
-    pass
-
-
-@pytest.mark.manual
 @pytest.mark.tier(2)
 def test_upgrade_appliance_console_scap():
     """
@@ -20703,42 +17158,6 @@ def test_catalog_item_for_ansible_playbook():
         initialEstimate: 1/4h
         startsin: 5.8
         title: Catalog Item for Ansible Playbook
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(1)
-def test_embed_ansible_catalog_items():
-    """
-    test adding new playbook catalogs and items to remote and global
-    region
-    https://bugzilla.redhat.com/show_bug.cgi?id=1449696
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: config
-        caseimportance: medium
-        caseposneg: negative
-        initialEstimate: 1/6h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(1)
-def test_embed_tower_add_rhos_credentials():
-    """
-    Add RHOS credentials.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        initialEstimate: 1/2h
-        startsin: 5.9
     """
     pass
 
@@ -21092,40 +17511,6 @@ def test_custom_button_state_enabled():
 
 
 @pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(3)
-def test_service_ansible_playbook_standard_output_non_ascii_hostname():
-    """
-    Look for Standard ouptut
-    https://bugzilla.redhat.com/show_bug.cgi?id=1534039
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        caseimportance: medium
-        initialEstimate: 1/6h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.ansible
-def test_embed_tower_add_private_repo():
-    """
-    Ability to add private repo with SCM credentials.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        caseimportance: critical
-        initialEstimate: 1/6h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
 @test_requirements.report
 @pytest.mark.tier(1)
 def test_report_export_import_run_custom_report():
@@ -21143,27 +17528,6 @@ def test_report_export_import_run_custom_report():
         caseimportance: medium
         initialEstimate: 1/6h
         startsin: 5.3
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(3)
-def test_service_ansible_service_name():
-    """
-    https://bugzilla.redhat.com/show_bug.cgi?id=1505929
-    After creating the service using ansible playbook type add a new text
-    field to service dialog named "service_name" and then use that service
-    to order the service which will have a different name than the service
-    catalog item.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        caseimportance: medium
-        initialEstimate: 1/2h
-        startsin: 5.8
     """
     pass
 
@@ -21468,24 +17832,6 @@ def test_cluster_and_project_availablity_in_source_and_target():
 
 
 @pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(1)
-def test_embed_tower_repo_url_validation():
-    """
-    After all processes are running fill out a new repo with resolvable
-    /un-resolvable url, use the validation button to check its correct.
-    https://bugzilla.redhat.com/show_bug.cgi?id=1478958
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        initialEstimate: 1/6h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
 @test_requirements.power
 @pytest.mark.tier(2)
 def test_restart_guest_scvmm2016():
@@ -21628,23 +17974,6 @@ def test_custom_button_enable():
         caseimportance: medium
         initialEstimate: 1/12h
         startsin: 5.9
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(3)
-def test_service_ansible_playbook_retire_non_ascii():
-    """
-    Retire ansible playbook service with non_ascii host
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        caseimportance: medium
-        initialEstimate: 1/6h
-        startsin: 5.8
     """
     pass
 
@@ -21799,24 +18128,6 @@ def test_rightsize_memory_vsphere6():
         assignee: tpapaioa
         casecomponent: candu
         initialEstimate: 1/6h
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(3)
-def test_service_ansible_playbook_order_non_ascii():
-    """
-    test ordering ansible playbook service with non ascii characters in
-    the host
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        caseimportance: medium
-        initialEstimate: 1/6h
-        startsin: 5.8
     """
     pass
 
@@ -22145,23 +18456,6 @@ def test_report_secondary_display_filter_should_be_editable():
         caseimportance: medium
         initialEstimate: 1/6h
         title: Report secondary (display) filter should be editable
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(1)
-def test_embed_tower_playbooks_tag():
-    """
-    https://bugzilla.redhat.com/show_bug.cgi?id=1526218
-    RBAC - tag playbooks and allow user to see just this taged playbook.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        initialEstimate: 1/2h
-        startsin: 5.10
     """
     pass
 
@@ -25914,23 +22208,6 @@ def test_quota_enforcement_for_cloud_volumes():
 
 
 @pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(1)
-def test_embed_tower_api_on_url():
-    """
-    The API should be present on https://<ip>/ansibleapi.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        caseimportance: critical
-        initialEstimate: 1/6h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
 @test_requirements.snapshot
 def test_creating_second_snapshot_on_suspended_vm():
     """
@@ -26523,23 +22800,6 @@ def test_group_infra_storage_quota_by_lifecycle():
 
 
 @pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(1)
-def test_embed_tower_event_catcher_process():
-    """
-    EventCatcher process is started after Ansible role is enabled (rails
-    evm:status)
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        initialEstimate: 1/4h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
 def test_storage_ebs_added_in_ec2_provider():
     """
     Requires:
@@ -26834,23 +23094,6 @@ def test_azone_memory_usage_azure():
 
 
 @pytest.mark.manual
-@test_requirements.ansible
-def test_embed_tower_add_repo_invalid_url():
-    """
-    Try to add GIT/HTPPs url which does not exist. User should be notified
-    about invalid URL.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        caseimportance: critical
-        initialEstimate: 1/6h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
 @test_requirements.report
 def test_schedule_add_from_report():
     """
@@ -26991,27 +23234,6 @@ def test_verify_page_landing_cloud_subnets():
         caseimportance: low
         initialEstimate: 1/10h
         startsin: 5.6
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_files_windows_utf_8_files():
-    """
-    Configure SSA to include c:\windows\debug\* and verify its content
-
-    Polarion:
-        assignee: sbulage
-        caseimportance: medium
-        initialEstimate: 1/2h
-        setup: 1. Configure SSA profile to include c:\windows\debug\*
-               2. Run SSA
-               3. View the content of all the files (i.e., mrt.log, passwd.log,
-               sammui.log, wlms.log, etc...)
-        startsin: 5.3
-        testtype: integration
     """
     pass
 
@@ -27201,83 +23423,6 @@ def test_log_collect_current_server_all_unconfigured():
 
 
 @pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(1)
-def test_embed_tower_add_machine_credentials_vault():
-    """
-    Add vault password and test in the playbook that encrypted yml can be
-    decrypted.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        initialEstimate: 1/2h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(1)
-def test_embed_tower_add_machine_credentials_escalate_perm_sudo():
-    """
-    Allow user/admin to create/import credentials for machines which will
-    be managed (may need to be split into multiple tests to cover
-    -Machine, Network, Amazon Web Services, Rackspace, VMware vCenter, Red
-    Hat Satellite 6, Red Hat CloudForms, Google Compute Engine, Microsoft
-    Azure Classic, Microsoft Azure Resource Manager, OpenStack)
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        initialEstimate: 1h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(1)
-def test_embed_tower_add_machine_credentials_machine_root_pass():
-    """
-    Allow user/admin to create/import credentials for machines which will
-    be managed (may need to be split into multiple tests to cover
-    -Machine, Network, Amazon Web Services, Rackspace, VMware vCenter, Red
-    Hat Satellite 6, Red Hat CloudForms, Google Compute Engine, Microsoft
-    Azure Classic, Microsoft Azure Resource Manager, OpenStack)
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        initialEstimate: 1h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(1)
-def test_embed_tower_add_machine_credentials_machine_ssh_key():
-    """
-    Allow user/admin to create/import credentials for machines which will
-    be managed (may need to be split into multiple tests to cover
-    -Machine, Network, Amazon Web Services, Rackspace, VMware vCenter, Red
-    Hat Satellite 6, Red Hat CloudForms, Google Compute Engine, Microsoft
-    Azure Classic, Microsoft Azure Resource Manager, OpenStack)
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        initialEstimate: 1h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
 @test_requirements.chargeback
 @pytest.mark.tier(2)
 def test_chargeback_preview():
@@ -27383,22 +23528,6 @@ def test_saml_verify_get_user_groups_from_external_authentication_httpd__option(
 
 
 @pytest.mark.manual
-@pytest.mark.tier(1)
-def test_rhi_overview():
-    """
-    Verify testing whehter issues related to systems are categorised or
-    not
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        initialEstimate: 1/2h
-        testtype: integration
-    """
-    pass
-
-
-@pytest.mark.manual
 @test_requirements.rep
 def test_distributed_zone_mixed_infra():
     """
@@ -27409,23 +23538,6 @@ def test_distributed_zone_mixed_infra():
         casecomponent: infra
         caseimportance: medium
         initialEstimate: 1/12h
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(1)
-def test_embed_tower_creds_tag():
-    """
-    https://bugzilla.redhat.com/show_bug.cgi?id=1526219
-    RBAC - tag credentials and allow new user see just this credential.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        initialEstimate: 1/2h
-        startsin: 5.10
     """
     pass
 
@@ -27468,23 +23580,6 @@ def test_verify_external_auth_configuration_for_ldap_can_be_un_configured_using_
         initialEstimate: 1/3h
         title: Verify external auth configuration for ldap can be un
                configured using appliance_console
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(2)
-def test_embed_tower_order_service_extra_vars():
-    """
-    https://bugzilla.redhat.com/show_bug.cgi?id=1444831
-    Execute playbook with extra variables which will be passed to Tower.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        initialEstimate: 1/4h
-        startsin: 5.8
     """
     pass
 
@@ -27736,23 +23831,6 @@ def test_ec2_tags_instances():
         casecomponent: cloud
         caseimportance: medium
         initialEstimate: 1/6h
-        startsin: 5.8
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.ansible
-@pytest.mark.tier(1)
-def test_embed_tower_logs():
-    """
-    Separate log files should be generated for Ansible to aid debugging.
-    p1 (/var/log/tower)
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        initialEstimate: 1/4h
         startsin: 5.8
     """
     pass
@@ -31796,23 +27874,6 @@ def test_configuration_start_page_menu_category():
 
 
 @pytest.mark.manual
-@test_requirements.smartstate
-@pytest.mark.tier(1)
-def test_ssa_vm_files():
-    """
-    Check file list is fetched correctly for analysed VM
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: smartst
-        caseimportance: medium
-        initialEstimate: 1/2h
-        testtype: integration
-    """
-    pass
-
-
-@pytest.mark.manual
 @pytest.mark.tier(3)
 def test_automate_restrict_domain_crud():
     """
@@ -32357,23 +28418,6 @@ def test_reconfigure_vm_vmware_mem_multiple():
             4. Action should succeed
             5. Action should succeed
             6. Action should Error
-    """
-    pass
-
-
-@pytest.mark.manual
-@test_requirements.ansible
-def test_embed_tower_exec_play_against_ipv6_machine():
-    """
-    User/Admin is able to execute playbook without creating Job Temaplate
-    and can execute it against machine which has ipv6 address.
-
-    Polarion:
-        assignee: sbulage
-        casecomponent: ansible
-        caseimportance: medium
-        initialEstimate: 1h
-        startsin: 5.8
     """
     pass
 
