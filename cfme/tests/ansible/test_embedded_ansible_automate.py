@@ -234,7 +234,11 @@ def test_embedded_ansible_custom_button_localhost(full_template_vm_modscope, cus
     view = navigate_to(ansible_service, "Details")
     hosts = view.provisioning.details.get_text_of("Hosts")
     assert hosts == "localhost"
-    assert view.provisioning.results.get_text_of("Status") == "successful"
+    assert (
+        view.provisioning.results.get_text_of("Status") == "successful"
+        if appliance.version < "5.11"
+        else "Finished"
+    )
 
 
 def test_embedded_ansible_custom_button_target_machine(full_template_vm_modscope, custom_vm_button,
@@ -258,7 +262,11 @@ def test_embedded_ansible_custom_button_target_machine(full_template_vm_modscope
     view = navigate_to(ansible_service, "Details")
     hosts = view.provisioning.details.get_text_of("Hosts")
     assert hosts == full_template_vm_modscope.ip_address
-    assert view.provisioning.results.get_text_of("Status") == "successful"
+    assert (
+        view.provisioning.results.get_text_of("Status") == "successful"
+        if appliance.version < "5.11"
+        else "Finished"
+    )
 
 
 def test_embedded_ansible_custom_button_specific_hosts(full_template_vm_modscope, custom_vm_button,
@@ -283,7 +291,11 @@ def test_embedded_ansible_custom_button_specific_hosts(full_template_vm_modscope
     view = navigate_to(ansible_service, "Details")
     hosts = view.provisioning.details.get_text_of("Hosts")
     assert hosts == full_template_vm_modscope.ip_address
-    assert view.provisioning.results.get_text_of("Status") == "successful"
+    assert (
+        view.provisioning.results.get_text_of("Status") == "successful"
+        if appliance.version < "5.11"
+        else "Finished"
+    )
 
 
 @test_requirements.alert
